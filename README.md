@@ -8,10 +8,13 @@ Displays city weather on the menu. Data are obtained from http://openweathermap.
 ![alt tag](http://imagelink.cz/images/currentweatheradmin.png)
 ### Version
 1.0
+### Languages
+[b]Supported Languages:[/b]
+ - English
+ - Čeština
 ### Changelog
 1.0
  - The release
-
 ### Installation
 Supports standard installation from the administration area of CMS e107.
 
