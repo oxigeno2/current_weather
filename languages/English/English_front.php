@@ -69,7 +69,7 @@ define("LAN_WEATHER_MENU_903", "Cold");
 define("LAN_WEATHER_MENU_904", "Hot");
 define("LAN_WEATHER_MENU_905", "Windy");
 define("LAN_WEATHER_MENU_906", "Hail");
-define("LAN_WEATHER_MENU_950", "Setting");
+define("LAN_WEATHER_MENU_950", "Temps clair");
 define("LAN_WEATHER_MENU_951", "Calm"); 
 define("LAN_WEATHER_MENU_952", "Light breeze");
 define("LAN_WEATHER_MENU_953", "Gentle Breeze"); 
