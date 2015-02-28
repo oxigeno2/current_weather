@@ -11,7 +11,9 @@ Displays city weather on the menu. Data are obtained from http://openweathermap.
 ### Languages
 Supported Languages:
  - English
- - Čeština
+ - Czech
+ - French
+ - German
 
 ### Changelog
 1.0
