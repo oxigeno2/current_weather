@@ -22,6 +22,12 @@ Supported Languages:
 ### Installation
 Supports standard installation from the administration area of CMS e107.
 
+### Used icons
+Icons made by <a href="http://merlinthered.deviantart.com/">MerlinTheRed</a> - 
+      <a href="http://merlinthered.deviantart.com/art/plain-weather-icons-157162192">plain weather icons</a> is licensed by 
+      <a href="http://creativecommons.org/licenses/by-sa/2.5/" title="Creative Commons Attribution-ShareAlike license">CC Attribution-ShareAlike</a>
+    
+
 License
 ----
 
