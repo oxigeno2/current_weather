@@ -16,5 +16,7 @@ define("LAN_WEATHER_ADMIN_COLOR_2", "Black");
 define("LAN_WEATHER_ADMIN_COLOR_3", "Color");
 define("LAN_WEATHER_ADMIN_LINK", "Show link - OpenWeatherMap");
 define("LAN_WEATHER_ADMIN_LINK_H", "Comply licenses!");
+define("LAN_WEATHER_ADMIN_APPID", "API key");
+define("LAN_WEATHER_ADMIN_APPID_H", "In order to obtain an API key to register on http://openweathermap.org/");
 
 ?>

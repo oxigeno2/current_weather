@@ -16,15 +16,16 @@ $weatherUnits = e107::getPlugPref('current_weather', 'current_weather_unit');
 $weatherScheme = e107::getPlugPref('current_weather', 'current_weather_scheme');
 $weatherSchow = e107::getPlugPref('current_weather', 'current_weather_deatils');
 $weatherLink = e107::getPlugPref('current_weather', 'current_weather_link');
+$weatherAppid = e107::getPlugPref('current_weather', 'current_weather_appid');
 $weatherDegrees = array(
       'metric' => 'C',
       'imperial' => 'F');
 $weatherDegree = $weatherDegrees[$weatherUnits];
 
-$url = "http://api.openweathermap.org/data/2.5/weather?q=$weatherCity&mode=json&units=$weatherUnits";
+$url = "http://api.openweathermap.org/data/2.5/weather?q=$weatherCity&mode=json&units=$weatherUnits&appid=$weatherAppid";
 $options = [
     'http' => [
-        'timeout' => 1
+        'timeout' => 10
     ]
 ];
 $context = stream_context_create($options);

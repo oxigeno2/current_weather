@@ -52,7 +52,8 @@ class plugin_current_weather_admin_ui extends e_admin_ui
 			'current_weather_unit' 				=> array('title'=> LAN_WEATHER_ADMIN_UNIT, 'type' => 'dropdown', 'data' => 'str'),
 			'current_weather_scheme' 			=> array('title'=> LAN_WEATHER_ADMIN_COLOR, 'type' => 'method', 'data' => 'str'),
       'current_weather_deatils'			=> array('title'=> LAN_WEATHER_ADMIN_DETAILS, 'type' => 'boolean', 'data' => 'int'),
-      'current_weather_link'			  => array('title'=> LAN_WEATHER_ADMIN_LINK, 'type' => 'boolean', 'data' => 'int', 'help' => LAN_WEATHER_ADMIN_LINK_H)			
+      'current_weather_link'			  => array('title'=> LAN_WEATHER_ADMIN_LINK, 'type' => 'boolean', 'data' => 'int', 'help' => LAN_WEATHER_ADMIN_LINK_H),
+      'current_weather_appid'			  => array('title'=> LAN_WEATHER_ADMIN_APPID, 'type' => 'text', 'data' => 'str', 'help' => LAN_WEATHER_ADMIN_APPID_H)	
 		);
 
 		public function init()
