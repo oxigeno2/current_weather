@@ -1,13 +1,8 @@
 # Current Weather - (plugin for CMS e107 v2)
 Displays city weather on the menu. Data are obtained from http://openweathermap.org/.
 
-## Screenshots
-###Front Page - Menu
-![alt tag](http://imagelink.cz/images/currentweatherfront.png)
-###Administration Area
-![alt tag](http://imagelink.cz/images/currentweatheradmin.png)
 ### Version
-1.0
+1.1
 ### Languages
 Supported Languages:
  - English
@@ -16,6 +11,9 @@ Supported Languages:
  - German
 
 ### Changelog
+1.1
+ - Add use API key, without using API keys can not receive data.
+
 1.0
  - The release
 
