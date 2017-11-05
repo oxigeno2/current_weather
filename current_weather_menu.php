@@ -25,7 +25,7 @@ $weatherDegree = $weatherDegrees[$weatherUnits];
 $url = "http://api.openweathermap.org/data/2.5/weather?q=$weatherCity&mode=json&units=$weatherUnits&appid=$weatherAppid";
 $options = [
     'http' => [
-        'timeout' => 10
+        'timeout' => 2
     ]
 ];
 $context = stream_context_create($options);

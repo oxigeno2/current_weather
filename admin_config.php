@@ -14,6 +14,8 @@ if (!getperms('P'))
 	exit;
 }
 
+e107::lan('current_weather',true,true);
+
 class current_weather_admin extends e_admin_dispatcher
 {
 	protected $modes = array(	
@@ -24,8 +26,7 @@ class current_weather_admin extends e_admin_dispatcher
 		
 	protected $adminMenu = array(
 	
-		'main/prefs' 		=> array('caption'=> LAN_PREFS, 'perm' => 'P'),	
-    //'main/custom'		=> array('caption'=> 'About', 'perm' => 'P')
+		'main/prefs' 		=> array('caption'=> LAN_PREFS, 'perm' => 'P')
 	);
 
 	protected $adminMenuAliases = array(
@@ -37,42 +38,35 @@ class current_weather_admin extends e_admin_dispatcher
 
 class plugin_current_weather_admin_ui extends e_admin_ui
 {
-		protected $pluginTitle = "Current Weather";
-		protected $pluginName = 'current_weather';
-		protected $tableJoin = array();
-    protected $listQry = "";
-		protected $pid = "blank_id";
-		protected $perPage = 20;
-		protected $batchDelete = true;
-		protected $displaySettings = array();
-		protected $disallowPages = array('main/create', 'main/prefs');
+	protected $pluginTitle = "Current Weather";
+	protected $pluginName = 'current_weather';
+	protected $tableJoin = array();
+	protected $listQry = "";
+	protected $pid = "blank_id";
+	protected $perPage = 20;
+	protected $batchDelete = true;
+	protected $displaySettings = array();
+	protected $disallowPages = array('main/create', 'main/prefs');
 
-		protected $prefs = array(
-			'current_weather_city'	   		=> array('title'=> LAN_WEATHER_ADMIN_ADMIN_CITY, 'type'=>'text', 'data' => 'text', 'validate' => true),
-			'current_weather_unit' 				=> array('title'=> LAN_WEATHER_ADMIN_UNIT, 'type' => 'dropdown', 'data' => 'str'),
-			'current_weather_scheme' 			=> array('title'=> LAN_WEATHER_ADMIN_COLOR, 'type' => 'method', 'data' => 'str'),
-      'current_weather_deatils'			=> array('title'=> LAN_WEATHER_ADMIN_DETAILS, 'type' => 'boolean', 'data' => 'int'),
-      'current_weather_link'			  => array('title'=> LAN_WEATHER_ADMIN_LINK, 'type' => 'boolean', 'data' => 'int', 'help' => LAN_WEATHER_ADMIN_LINK_H),
-      'current_weather_appid'			  => array('title'=> LAN_WEATHER_ADMIN_APPID, 'type' => 'text', 'data' => 'str', 'help' => LAN_WEATHER_ADMIN_APPID_H)	
-		);
+	protected $prefs = array(		
+	'current_weather_city'		=> array('title'=> LAN_WEATHER_ADMIN_ADMIN_CITY, 'type'=>'text', 'data' => 'text', 'validate' => true),
+	'current_weather_unit'		=> array('title'=> LAN_WEATHER_ADMIN_UNIT, 'type' => 'dropdown', 'data' => 'str'),
+	'current_weather_scheme'	=> array('title'=> LAN_WEATHER_ADMIN_COLOR, 'type' => 'method', 'data' => 'str'),
+	'current_weather_deatils'	=> array('title'=> LAN_WEATHER_ADMIN_DETAILS, 'type' => 'boolean', 'data' => 'int'),
+	'current_weather_link'		=> array('title'=> LAN_WEATHER_ADMIN_LINK, 'type' => 'boolean', 'data' => 'int', 'help' => LAN_WEATHER_ADMIN_LINK_H),
+	'current_weather_appid'		=> array('title'=> LAN_WEATHER_ADMIN_APPID, 'type' => 'text', 'data' => 'str', 'help' => LAN_WEATHER_ADMIN_APPID_H),	
+	);
 
 		public function init()
 		{
-    	$effects = array(
+		$effects = array(
 			'metric'	=> 'Celsium °C',
 			'imperial'	=> 'Farenhiet °F', 
 			);	
 		  $this->prefs['current_weather_unit']['writeParms'] 		= $effects;	
 		  $this->prefs['current_weather_unit']['readParms'] 		= $effects;	
   }
-  /*	public function customPage()
-	{
-			$ns = e107::getRender();
-			$text = "!";
-			$ns->tablerender("Hello",$text);	
-			
-	}
-  */
+
 }
 
 class plugin_current_weather_admin_form_ui extends e_admin_form_ui
