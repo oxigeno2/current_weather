@@ -19,4 +19,8 @@ define("LAN_WEATHER_ADMIN_LINK_H", "Pozor na licenci, více v podpoře.");
 define("LAN_WEATHER_ADMIN_APPID", "API klíč");
 define("LAN_WEATHER_ADMIN_APPID_H", "Pro získání API klíče se zaregistrujte na http://openweathermap.org/");
 
+//help admin
+define("LAN_WEATHER_HELP_1", "Kde získám API (APPID)");
+define("LAN_WEATHER_HELP_2", "Pro získání API klíče se zaregistrujte na http://openweathermap.org/. Poté ho vygenerujte na stránce vašeho uživatelského účtu."); 
+
 ?>
