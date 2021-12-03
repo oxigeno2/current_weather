@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e107Plugin name="Current Weather" lan="LAN_WEATHER_MENU_NAME" version="1.2" date="2017-11-5" compatibility="2.0" installRequired="true" >
-	<author name="Roland Graf (OxigenO2)" url="www.oxigen.mablog.eu" />
+<e107Plugin name="Current Weather" lan="LAN_WEATHER_MENU_NAME" version="1.2" date="2021-12-03" compatibility="2.0" installRequired="true" >
+	<author name="Roland Graf (OxigenO2)" url="https://github.com/oxigeno2/current_weather" />
 	<summary lan="LAN_WEATHER_MENU_SUMM">Displays city weather</summary>
 	<description lan="LAN_WEATHER_MENU_DESC">Displays city weather on the menu</description>
 	<keywords>
@@ -8,7 +8,7 @@
 		<word>forecast</word>
 	</keywords>
 	<category>misc</category>
-	<copyright>2014 OxigenO2</copyright>
+	<copyright>2021 OxigenO2</copyright>
 	<adminLinks>
 		<link url="admin_config.php" description="" icon="images/icon_32.png" iconSmall="images/icon_16.png" primary="true" >LAN_CONFIGURE</link>
 	</adminLinks>
