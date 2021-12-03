@@ -2,7 +2,7 @@
 Displays city weather on the menu. Data are obtained from http://openweathermap.org/.
 
 ### Version
-1.1
+1.2
 ### Languages
 Supported Languages:
  - English
@@ -11,6 +11,9 @@ Supported Languages:
  - German
 
 ### Changelog
+1.2
+ - Adding and correcting the translation of the plugin.
+
 1.1
  - Add use API key, without using API keys can not receive data.
 
